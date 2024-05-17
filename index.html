@@ -1,14 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.10/dayjs.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <title>Portal educacional</title>
 </head>
 
-<body>
-    <h1>Hello World</h1>
+<body class="bg-stone-900 h-screen">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="./assets/logoUnigranrio.png" class="h-12" alt="Flowbite Logo" />
+            </a>
+            <a href="./login.html">
+                <button
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                    Login
+                </button>
+            </a>
+
+        </div>
+    </nav>
+
+    <main class="p-8 flex flex-col h-5/6">
+        <h1 class="text-3xl text-gray-400 text-center mb-4">Bem-vindo ao EducaTech: Transformando a Educação com
+            Tecnologia
+        </h1>
+        <div class="flex flex-col items-center text-gray-400">
+            <div class="max-w-xl  ">
+                <p class="mb-4">No mundo atual, a tecnologia está presente em todos os aspectos de nossas vidas,
+                    inclusive na
+                    educação.
+                    No
+                    entanto, o uso excessivo de dispositivos móveis, como celulares, nas salas de aula tem se tornado
+                    uma
+                    preocupação crescente, afetando negativamente o aprendizado dos alunos.
+                </p>
+                <p class="mb-4">
+                    Pensando nisso, criamos o EducaTech, um site educacional inovador que visa transformar o ambiente de
+                    ensino
+                    e aprendizagem. Nosso objetivo é oferecer recursos digitais de alta qualidade que não só engajem os
+                    estudantes, mas também potencializem seu desenvolvimento acadêmico.
+                </p>
+                <p class="mb-4 text-center text-lg">
+                    Nossa Proposta:
+                </p>
+                <ul class="mb-4">
+                    <li><strong>Recursos Interativos:</strong> Material didático digital, vídeos educativos e quizzes
+                        interativos para tornar o aprendizado mais dinâmico e envolvente.</li>
+                    <li><strong>Plataforma Acessível:</strong> Conteúdos disponíveis para acesso a qualquer hora e
+                        lugar,
+                        permitindo que alunos e professores integrem a tecnologia ao processo educacional de forma
+                        produtiva.
+                    </li>
+                    <li><strong>Suporte ao Educador: </strong>Ferramentas e materiais de apoio para auxiliar os
+                        professores
+                        na
+                        criação de aulas mais atrativas e eficazes.</li>
+                </ul>
+                <a href="./login.html">
+                    <button
+                        class=" w-full text-white bg-blue-700 hovera:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                        Login
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </main>
 </body>
+<script src="index.js"></script>
 
 </html>
