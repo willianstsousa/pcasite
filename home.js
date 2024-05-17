@@ -1,7 +1,9 @@
 import livros from "./livros.json" assert { type: "json" };
+const inputBusca = document.getElementById("busca");
 
 function montaTabelaLivros(arrayLivros) {
   const tbodyLivros = document.getElementById("tbodyLivros");
+  tbodyLivros.innerHTML = "";
   arrayLivros.forEach((livro) => {
     const newTr = document.createElement("tr");
     [
@@ -31,6 +33,28 @@ function montaTabelaLivros(arrayLivros) {
   });
 }
 
+function filtraLivro(nomeLivro) {
+  if (nomeLivro == "") {
+    montaTabelaLivros(livros);
+  } else {
+    const livrosFiltrados = livros.filter((livronfo) =>
+      livronfo.titulo.toLowerCase().includes(nomeLivro.toLowerCase())
+    );
+    if (livrosFiltrados.length > 0) {
+      montaTabelaLivros(livrosFiltrados);
+    } else {
+      const tbodyLivros = document.getElementById("tbodyLivros");
+      tbodyLivros.innerHTML = "";
+    }
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   montaTabelaLivros(livros);
+});
+
+inputBusca.addEventListener("keydown", (event) => {
+  if (event.key == "Enter") {
+    filtraLivro(event.target.value);
+  }
 });

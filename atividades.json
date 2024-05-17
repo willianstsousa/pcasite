@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Quiz de Matemática",
+        "descricao": "Um quiz interativo com perguntas de múltipla escolha sobre operações matemáticas básicas, álgebra, geometria e outros tópicos. O feedback imediato ajuda os alunos a entenderem seus erros e acertos."
+    },
+    {
+        "nome": "Jogo de Palavras Cruzadas em Língua Portuguesa",
+        "descricao": "Atividades de palavras cruzadas para reforçar o vocabulário e a ortografia dos alunos. Podem ser temáticas, abordando diferentes tópicos como sinônimos, antônimos, gramática, entre outros."
+    },
+    {
+        "nome": "Simulação de Experimentos Científicos",
+        "descricao": "Atividades que permitem aos alunos realizar experimentos virtuais em disciplinas como Física, Química e Biologia. Por exemplo, simular uma reação química ou explorar o funcionamento do sistema solar."
+    },
+    {
+        "nome": "Exercícios de Compreensão de Leitura",
+        "descricao": "Textos seguidos de perguntas de compreensão, que podem incluir questões de múltipla escolha, verdadeiro ou falso e perguntas abertas. Isso ajuda a desenvolver habilidades de leitura crítica e interpretação de texto."
+    },
+    {
+        "nome": "Jogo de História e Geografia",
+        "descricao": "Um jogo interativo onde os alunos podem responder perguntas sobre eventos históricos, geografia mundial, mapas e culturas. Pode incluir desafios de correspondência de datas, identificação de locais em mapas e contextualização de eventos históricos."
+    },
+    {
+        "nome": "Laboratório de Línguas",
+        "descricao": "Atividades que envolvem a prática de idiomas estrangeiros, como inglês ou espanhol. Podem incluir exercícios de escuta e repetição, quizzes de vocabulário, jogos de formação de frases e cenários de conversação simulada."
+    }
+]
