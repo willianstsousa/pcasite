@@ -32,10 +32,11 @@
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul
                     class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                            aria-current="page">Livros digitais</a>
+                        <a href="home.html"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Livros
+                            digitais</a>
                     </li>
                     <li>
                         <a href="atividadeInterativas.html"
@@ -50,53 +51,60 @@
                         </a>
                     </li>
                     <li>
-                        <a href="suporte.html"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                            Suporte
-                        </a>
+                        <a href="#"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                            aria-current="page">Suporte</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <main class="p-8 flex flex-col h-5/6">
-        <div class="flex items-end mb-5">
-            <div class="relative z-0 w-full mr-5 group">
-                <input type="text" name="busca" id="busca"
+        <p class="text-lg text-gray-400">Entre em contato conosco</p>
+        <!-- <form id="formEditaTarefa" class="max-w-md mx-auto">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="nome_tarefa" id="nome_tarefa_edit"
                     class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" " required />
-                <label for="busca"
+                <label for="nome_tarefa"
                     class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-                    Busca
+                    Nome da tarefa
                 </label>
             </div>
-            <button type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Buscar
-            </button>
-        </div>
-        <div class="relative overflow-x-auto">
-            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                    <tr>
-                        <th scope="col" class="px-6 py-3">
-                            Nome Livro
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            Disciplina
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            Série
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            Tema
-                        </th>
-                    </tr>
-                </thead>
-                <tbody id="tbodyLivros">
-                </tbody>
-            </table>
-        </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <select required id="prioridade_tarefa_edit"
+                    class="bg-gray-500 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected value="">Selecione a prioridade</option>
+                    <option value="alta">Alta</option>
+                    <option value="normal">Normal</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+            </div>
+            <div class="relative z-0 w-full mb-5 group flex items-center">
+                <input id="checkboxRecorrente_edit" type="checkbox"
+                    class="cursor-pointer mr-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="checkboxRecorrente_edit" class="cursor-pointer text-gray-400">Recorrente</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group flex items-center">
+                <input id="checkboxConcluido_edit" type="checkbox"
+                    class="cursor-pointer mr-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="checkboxConcluido_edit" class="cursor-pointer text-gray-400">Concluída</label>
+            </div>
+            <div class="flex justify-between">
+                <button type="button" id="btnCancelarFormEditTarefa"
+                    class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">
+                    Cancelar
+                </button>
+                <button type="button" id="btnDeleteEditTarefa"
+                    class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
+                    Deletar Item
+                </button>
+                <button type="submit"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Editar
+                </button>
+            </div>
+        </form> -->
 
     </main>
 </body>
